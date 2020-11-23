@@ -1,5 +1,5 @@
 import React from 'react'
-import './pfContent.css'
+import './PfContent.css'
 const PfContent = props => {
     return (
         <section className="pfContent">
