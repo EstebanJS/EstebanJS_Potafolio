@@ -1,0 +1,52 @@
+.ItemProject{
+    height: 100px;
+    width: 90%;
+    background: #ddd8d8;
+    display: flex;
+    align-content: center;
+    padding: 15px;
+}
+
+.ItemProject div{
+}
+
+.ItemProject .Image{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.ItemProject .Image img{
+    height: 100%;
+    width: 100%;
+}
+
+.ItemProject .Content{
+    margin-left: 10px;
+    width: 50%;
+    gap: 5px;
+}
+.ItemProject .Content .header h3{
+    margin: 2px 0;
+    text-align: left;
+}
+
+.ItemProject .Content .body{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.ItemProject .Link{
+    margin-left: 5%;
+    color: #C746A7;
+    width: 10%;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+.ItemProject .Link svg{
+    cursor: pointer;
+}

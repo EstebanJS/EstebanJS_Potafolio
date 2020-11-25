@@ -20,7 +20,7 @@ const Header = () => {
           </Link>
           <div className={menu ? 'menu open' : 'menu'}>
             <ul>
-              {/* <li><Link onClick={ToggleMenu} onKeyDown={ToggleMenu} to="/portafolio">Portafolio</Link></li> */}
+              <li><Link onClick={ToggleMenu} onKeyDown={ToggleMenu} to="/portafolio">Portafolio</Link></li>
               {/* <li><Link onClick={ToggleMenu} onKeyDown={ToggleMenu} to="/">Contacto</Link></li> */}
               {/* <li><Link onClick={ToggleMenu} onKeyDown={ToggleMenu} to="/">Blog</Link></li> */}
             </ul>
