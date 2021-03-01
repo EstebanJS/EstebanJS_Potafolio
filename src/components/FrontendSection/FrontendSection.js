@@ -1,6 +1,6 @@
 import React from 'react'
 import './frontendSection.css'
-import ItemSlider from './itemSlider'
+import ItemSlider from './ItemSlider.js'
 
 
 const FrontendSection = () => {
