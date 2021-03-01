@@ -1,0 +1,15 @@
+/* -------------------------------------------------- */
+/* Frontend Section */
+/* -------------------------------------------------- */
+.section-2 .hader-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section-2 .main-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
