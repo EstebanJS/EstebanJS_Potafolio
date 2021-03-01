@@ -102,3 +102,46 @@
     align-self: center;
     transform: skewX(-18deg);
 }
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width:1200px){
+
+}
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+    .info{
+        justify-content: center;
+    }
+    .content-item .left-part {
+        transform:skewX(18deg) translate(-25%);
+    }
+    .Logo {
+        top: 25%;
+    }
+
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width: 767px) {
+    .content-item .left-part {
+        width: 100%;
+        transform: skewX(0);
+    }
+    .Logo {
+        top: 40%;
+    }
+    .text-back-gorund {
+        display: none;
+    }
+}
