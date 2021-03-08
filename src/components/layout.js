@@ -8,6 +8,7 @@
 import React from "react"
 
 import Header from "./Header/header"
+// import LeftBar from "./LeftBar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -15,7 +16,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-        <main>{children}</main>
+      {/* <LeftBar /> */}
+      <main>{children}</main>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -11,7 +11,7 @@ import './style.css'
 import gsap from 'gsap';
 
 const CoverPage = () => {
-    useEffect(() => {
+    function animations() {
         var Section_1Begin = gsap.timeline()
         Section_1Begin.from(".title h1", { duration: 1, x: -600, ease: "back", stagger: 0.25 })
         Section_1Begin.from(".text p", { duration: 1, x: -700 })
@@ -20,11 +20,13 @@ const CoverPage = () => {
         Section_1Begin.from(".html", { duration: 1, x: 300, y: -10000, ease: "bounse" }, 1)
         Section_1Begin.from(".glases", { duration: 1, x: 1000, ease: "bounse" }, 1)
         Section_1Begin.from(".glases", { duration: 1, rotation: "360" }, 1)
-
-    })
+    }
+    useEffect(() => {
+        animations()
+    },[])
     const data = useStaticQuery(query)
     return (
-        <section id="Sec1" className="banner section-1">
+        <section id="Cover" className="banner section-1">
             <div className="text">
                 <div className="title">
                     <h1>Yeisson</h1>

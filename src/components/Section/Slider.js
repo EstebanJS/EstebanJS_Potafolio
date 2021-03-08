@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import './itemSlider.css'
+import './slider.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 import gsap from 'gsap';
 const ItemSlider = () => {
     const [index, setIndex] = useState(0)
-    const [slider, setSlider] = useState([
+    const [slider] = useState([
         {
             title: "Html 5",
             description: "It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.",
@@ -56,30 +56,35 @@ const ItemSlider = () => {
     }
 
     useEffect(() => {
-        let animationsLeft = gsap.timeline()
-        animationsLeft.from('.left-part', {
+        let animations = gsap.timeline()
+        animations.from('.left-part', {
             duration: 0.5,
             x: '-100%',
             ease: "bounse"
         })
-        animationsLeft.from('.info', {
+        animations.from('.info', {
             duration: 0.5,
             x: '-100%',
             ease: "bounse"
         })
-        let animationsRight = gsap.timeline()
-        animationsRight.from('.Logo',
+        animations.from('.Logo',
             {
                 duration: 0.5,
                 y: '-100vh',
                 ease: "bounse"
-            })
-        animationsRight.from('.text-back-gorund',
+            }, 1)
+        animations.from('.text-back-gorund',
             {
                 duration: 0.5,
                 y: '100vh',
                 ease: "bounse"
-            })
+            }, 1)
+        animations.from('.Control',
+            {
+                duration: 0.5,
+                y: '100vh',
+                ease: "bounse"
+            }, 1)
 
     }, [index])
     return (
@@ -97,11 +102,11 @@ const ItemSlider = () => {
                 <img src={slider[index].image} alt={slider[index].title} />
             </div>
             <div className="Control">
-                <div onClick={AterSlide}>
+                <div onClick={AterSlide}  role="button" tabIndex={0} onKeyDown={AterSlide}>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </div>
-                <div onClick={NextSlide}>
-                    <FontAwesomeIcon icon={faChevronRight} />
+                <div onClick={NextSlide}  role="button" tabIndex={0} onKeyDown={NextSlide}>
+                    <FontAwesomeIcon icon={faChevronRight}/>
 
                 </div>
             </div>

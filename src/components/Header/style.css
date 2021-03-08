@@ -30,6 +30,7 @@ header .hamburguer {
     align-items: flex-end;
     padding: 10px;
     margin: 0 50px;
+    cursor: pointer;
 }
 
 header .hamburguer .line {
@@ -51,6 +52,32 @@ header .hamburguer .line:nth-child(3) {
     width: 1.5rem;
 }
 
+header .hamburguer.open .line:nth-child(1) {
+    position: absolute;
+    width: 2.5rem;
+    transform: translateY(-50%) rotate(45deg) !important;
+}
+
+header .hamburguer.open .line:nth-child(2) {
+    display: none;
+}
+
+header .hamburguer.open .line:nth-child(3) {
+    position: absolute;
+    width: 2.5rem;
+    transform: translateY(-50%) rotate(-45deg) !important;
+}
+
+header .hamburguer.open:hover .line:nth-child(1) {
+
+    width: 2.5rem;
+}
+
+header .hamburguer.open:hover .line:nth-child(3) {
+
+    width: 2.5rem;
+}
+
 header .hamburguer:hover .line {
     background-color: var(--primary-color);
     transition: .3s;
@@ -66,4 +93,37 @@ header .hamburguer:hover .line:nth-child(2) {
 
 header .hamburguer:hover .line:nth-child(1) {
     width: 1.5rem;
+}
+
+.menu-open {
+    transition: 0.3s;
+    position: fixed;
+    top: 7vh;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 3;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.menu-open.active{
+    transition: 0.3s;
+    height: 100%;
+}
+.menu-open li{
+    transition: 0.3s;
+    display: none;
+}
+.menu-open.active li{
+    transition: 0.3s;
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    text-align: center;
 }
