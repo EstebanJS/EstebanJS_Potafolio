@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section.css'
+import './section.css'
 import Slider from './Slider.js'
 import Projects from './Projects.js'
 import Contact from './Contact'
