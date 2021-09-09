@@ -4,7 +4,7 @@
 .section-2 .hader-content {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .section-2 .main-section {
