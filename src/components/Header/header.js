@@ -17,6 +17,10 @@ const Header = () => {
       url: "/#Projects"
     },
     {
+      name: "Others Proyects",
+      url: "/#OtherProyects"
+    },
+    {
       name: "Contact",
       url: "/#Contact"
     },

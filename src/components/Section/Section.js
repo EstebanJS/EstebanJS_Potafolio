@@ -3,6 +3,7 @@ import './section.css'
 import Slider from './Slider.js'
 import Projects from './Projects.js'
 import Contact from './Contact'
+import OtherProjects from './OtherProjects'
 
 
 const Section = ({ title, idSection, ItemStyle }) => {
@@ -14,6 +15,8 @@ const Section = ({ title, idSection, ItemStyle }) => {
                 return (<Projects />)
             case 3:
                 return (<Contact />)
+                case 4:
+                    return (<OtherProjects/>)
             default:
                 return (<></>)
         }

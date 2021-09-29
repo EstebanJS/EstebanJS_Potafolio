@@ -28,6 +28,11 @@ const Projects = () => {
             title:"Gitnet",
             link:"https://gitnet-estebanjs.vercel.app/",
             img:GIFNET
+        },
+        {
+            title:"Instacar",
+            link:"https://instacar-estebanjs.vercel.app/",
+            img:"https://firebasestorage.googleapis.com/v0/b/portafolio-9b41a.appspot.com/o/Instacar.png?alt=media&token=16f03910-8a40-4887-a325-efa37867f9d8"
         }
 
     ]

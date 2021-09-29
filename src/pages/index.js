@@ -13,6 +13,7 @@ const IndexPage = () => {
             <CoverPage  />
             <Section title="Skils" idSection="Skils" ItemStyle={1}/>
             <Section title="Personal Projects" idSection="Projects" ItemStyle={2}/>
+            <Section title="Other Projetcs" idSection="OtherProyects" ItemStyle={4}/>
             <Section title="Contact" idSection="Contact" ItemStyle={3}/>
         </Layout>
     )
